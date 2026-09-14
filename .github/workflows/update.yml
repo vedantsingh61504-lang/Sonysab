@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -25,10 +23,10 @@ jobs:
       - name: Run script
         run: python extract_sab.py
 
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'GitHub Actions Bot'
-          git config --global user.email 'actions@github.com'
-          git add sony_sab_sd.m3u
-          git diff --staged --quiet || git commit -m "Auto-update Sony SAB M3U file"
-          git push origin main
+      - name: Save and commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          file_pattern: sony_sab_sd.m3u
+          commit_message: "Auto-update Sony SAB M3U file"
+          commit_user_name: "GitHub Actions Bot"
+          commit_user_email: "actions@github.com"
