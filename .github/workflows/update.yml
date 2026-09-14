@@ -16,6 +16,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,4 +33,4 @@ jobs:
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
           git add sony_sab_sd.m3u
           git diff --staged --quiet || git commit -m "Auto-update Sony SAB M3U file"
-          git push
+          git push origin main || git push origin master
