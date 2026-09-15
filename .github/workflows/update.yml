@@ -23,6 +23,11 @@ jobs:
       - name: Run script
         run: python extract_sab.py
 
+      - name: Debug directory contents
+        run: |
+          echo "Current directory files:"
+          ls -la
+
       - name: Save and commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
