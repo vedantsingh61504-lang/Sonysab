@@ -1,3 +1,3 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="471" tvg-name="Sony SAB HD" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonySAB.png" group-title="Entertainment", Sony SAB HD
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#EXTINF:-1 tvg-id="471" tvg-name="Sony SAB HD" tvg-logo="https://img.media.jio.com/tvpimages/3/37/300267_1753198029802_l_medium.jpg" group-title="Jiotvstb+" group-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32BfOcij5y0NkYztgiMZ3AFXmBjXlAIYiuKm2U49BBLqpI4ZWuR92-LA&s=10",Sony SAB HD
+#KODIPROP:inputstream=inputstream.adaptive
