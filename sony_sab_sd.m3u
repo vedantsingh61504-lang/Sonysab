@@ -1,3 +1,3 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="471" tvg-name="Sony SAB HD" tvg-logo="https://jiotv.catchup.cdn.jio.com/dare_images/images/SonySAB.png" group-title="Entertainment By Premium PlugX",Sony SAB HD By Premium PlugX
-#KODIPROP:inputstream.adaptive.manifest_type=mpd
+#EXTINF:-1,Dummy File
+http://error.link
